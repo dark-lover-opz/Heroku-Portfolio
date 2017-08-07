@@ -1,13 +1,4 @@
-"scripts": {
-  "start": "node app",
-  "postinstall": "gulp default"
-}
-
 {
-  "scripts": {
-  "start": "node app",
-  "postinstall": "gulp default"
-},
   "name": "freelancer",
   "title": "Freelancer",
   "version": "3.3.7+1",
