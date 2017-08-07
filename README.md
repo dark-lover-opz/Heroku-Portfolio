@@ -2,6 +2,7 @@
 
 This repo is resting place of my personal portfolio website and blog.
 You can visit it on [Parth Sarthee](http://parthsarthee.com).
+This repo is being used by HEROKU to deploy the web app.
 
 ## Bugs and Issues
 
