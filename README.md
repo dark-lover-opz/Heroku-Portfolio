@@ -11,10 +11,10 @@ This portfolio theme is inspired from [Freelancer Theme](https://github.com/jero
 This repo, project and website is created, coded and maintained by Parth
 Sarthee. The design, however, is inspired from [Freelancer Theme](https://github.com/jeromelachaud/freelancer-theme) by [Jerome Lachaud](https://github.com/jeromelachaud).
 The technologies that are use:
-####HTML-5
-####CSS-3
-####JavaScript
-####Very-Very-Very Tiny PHP
+###HTML-5
+###CSS-3
+###JavaScript
+###Very-Very-Very Tiny PHP
 
 This project is currently deployed  on Heroku and can be visited [here](https://vetronus.herokuapp.com/).Please note that the project is still unorganised and incomplete. I have plans tocomplete it by August 2017.
 
