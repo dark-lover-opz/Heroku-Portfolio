@@ -1,0 +1,55 @@
+
+.aboutMe p
+{
+    /* color: white; */
+    font-family: 'Hind', sans-serif;
+    font-size: 28px;
+    line-height: 120%;
+}
+
+.aboutMe a
+{
+    text-align: center;
+}
+
+.skills
+{
+    text-align: center;
+}
+
+.skills img
+{
+    display: inline-block;
+    width: 19% ; 
+    margin: 0%;
+    padding: 1%; 
+}
+
+.callToAction
+{
+    text-align: center;
+    background-color: whitesmoke;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.callToAction div
+{
+    padding-bottom: 10px;
+}
+.callToAction h2
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: bold;
+    text-transform: capitalize;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10%;
+}
+
+footer
+{
+    padding: 25px;
+    color: white;
+    background-color: #2C3E50;
+    text-align: center;
+}

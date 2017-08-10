@@ -4,6 +4,9 @@ This repo is resting place of my personal portfolio website and blog.
 You can visit it on [Parth Sarthee](http://parthsarthee.com).
 This repo is being used by HEROKU to deploy the web app.
 
+## This WebApp is still incomplete.
+## Use it on your own risk.
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/Vetronus/ParthSarthee/issues) here on GitHub or

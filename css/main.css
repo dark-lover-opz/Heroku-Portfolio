@@ -1,0 +1,226 @@
+/*============================  Globals ============================*/
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Hind', sans-serif;  
+}
+
+.container
+{
+    width: 90%;
+    /* text-align: center; */
+    margin: auto;
+}
+
+ .greenBackground
+{
+    color: white;
+    background-color: #18BC9C;
+    padding: 10px 0px;
+    padding-bottom: 100px;
+} 
+
+.plainBackground
+{
+    
+    padding: 10px 0px;
+    padding-bottom: 100px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #18BC9C;
+    text-decoration: bold;
+}
+
+h1
+{
+    color: #2C3E50; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+
+.h1-light
+{
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+
+.button
+{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #18BC9C;
+    padding: 10px 40px;
+    font-size: 26px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #18BC9C;
+    background-color: transparent; 
+}
+.button:focus {
+    outline: none;
+}
+.button:hover{
+     background: #18BC9C;
+     color: white;; 
+    /* border-color: white;  */
+}
+
+.button2
+{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 40px;
+    font-size: 26px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: transparent; 
+}
+.button2:focus {
+    outline: none;
+}
+.button2:hover{
+     background: white;
+     color: #18BC9C;; 
+    border-color: white; 
+}
+/*=================================================*/
+
+/*============================ Border ============================*/
+hr.star-light,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+hr.star-light {
+  border-color: white;
+}
+hr.star-light:after {
+  background-color: #18BC9C;
+  color: white;
+}
+hr.star-primary {
+  border-color: #2C3E50;
+}
+hr.star-primary:after {
+  background-color: white;
+  color: #2C3E50;
+}
+/*=================================================*/
+
+/*============================ Navigation Bar ============================*/
+nav
+{
+    background-color: #2C3E50;
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    z-index:1; 
+}
+
+#logo
+{
+    margin: 0px;
+    /* margin-top: 10px;  */
+    display: inline-block;
+    margin-right: calc(calc(calc(100vw - 10%) - 300px) - 375px);
+
+}
+
+#logo h1
+{
+    /* color: #43e8d8;  */
+    color: white;
+    padding: 10px 0px;
+    margin: 0px;
+    font-size: 30px;
+}
+
+#navBar
+{
+    display: inline-block;
+}
+
+#navBar a
+{
+    text-decoration: none;
+    color: white; 
+    padding: 10px;
+}
+/*=================================================*/
+
+/*============================ Showcase Area ============================*/
+.showcase
+{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-weight: bold;
+    text-align: center; 
+    background-color:  #18BC9C;
+    color: white;
+    padding: 75px 0px;
+}
+
+.showcase img
+{
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.showcase h1
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 70px; 
+}
+
+.showcase p
+{
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 30px;
+     margin-top: 0px; 
+}
+
+/*=================================================*/

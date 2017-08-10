@@ -1,0 +1,45 @@
+.project {
+    text-align: center;
+    position: relative;  
+    display: inline; 
+    margin: 0px;
+    padding: 0px;
+   /* width: 100%;  for IE 6  */
+}
+
+.project-hover
+{
+    margin: 0px;
+    padding: 0px;
+    display: inline; 
+}
+
+.project img
+{
+    display: inline-block;
+    width: 30.5% ; 
+    margin: 0%;
+    padding: 1%; 
+}
+
+.project p 
+{ 
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    position: absolute; 
+    bottom: 10px;
+    left: 10%;   
+    width: 80%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 0px;
+     /* display: none;     */
+}
+
+/* a:hover
+{
+    display: none;
+}  */
+
+
