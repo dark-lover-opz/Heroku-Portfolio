@@ -37,9 +37,15 @@
      /* display: none;     */
 }
 
-/* a:hover
+@media (max-width: 760px)
 {
-    display: none;
-}  */
+    .project img
+    {
+        display: block;
+        width: 80%; 
+        margin: auto;
+        padding: 1%; 
+    }
+}
 
 

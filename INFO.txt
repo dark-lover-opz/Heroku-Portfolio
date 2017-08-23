@@ -1,0 +1,20 @@
+#Color Scheme 
+==============
+Bluish Grey => #2C3E50
+Light Green => #18BC9C
+White => Pure White
+========================
+
+#Fonts
+=======
+Hind Font : 'Hind', sans-serif
+Monstersat : 'Montserrat', sans-serif
+Josefin Sans : 'Josefin Sans', sans-serif;
+
+^note: Fonts are imported from Google Fonts.
+=================================================
+
+#How-To-Setup
+==============
+
+

@@ -155,6 +155,12 @@ nav
     z-index:1; 
 }
 
+#menu
+{
+    display: none;
+}
+
+
 #logo
 {
     margin: 0px;
@@ -224,3 +230,51 @@ nav
 }
 
 /*=================================================*/
+
+@media (max-width: 900px) 
+{
+    #logo h1
+    {
+        color: white;
+        padding: 10px 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    #logo
+    {
+        margin: 0px;
+        /* margin-top: 10px;  */
+        display: inline-block;
+        margin-right: calc(calc(calc(100vw - 10%) - 300px) - 260px);
+    
+    }
+}
+
+@media (max-width: 760px) 
+{
+    #navBar
+    {
+        display: none;
+    }
+
+    #menu
+    {
+        display: inline-block;
+        position: fixed;
+        color: white;
+        right: 5%;
+        margin: 0px;
+        padding: 8px;
+    }
+    
+    #navBar a
+    {
+        display: block;
+    }
+
+    .showcase h1
+    {
+        font-size: 50px; 
+    }
+}
