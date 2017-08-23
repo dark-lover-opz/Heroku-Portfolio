@@ -24,6 +24,14 @@ This project is currently deployed  on Heroku and can be visited [here](https://
 You don't need any backend or heavy front-end knowledge to modify this project simply replace the images in `img` folder, replace the texts in `index.html` file and edit some basic css if you want.
 In future, I might write a descriptive, user-friendly and quick way to start using this project as your portfolio theme.
 
+## Version History
+- Version 1.0 : Initial Release
+- Version 1.1 : Heroku-Deploy Ready
+- Version 1.2 : Cross-Platform and Resposive
+- Version 1.3 : Documentation Update*
+
+Coming Soon*
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/Vetronus/ParthSarthee/issues) here on GitHub or
