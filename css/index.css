@@ -36,31 +36,5 @@
     }   
 }
 
-.callToAction
-{
-    text-align: center;
-    background-color: whitesmoke;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-.callToAction div
-{
-    padding-bottom: 10px;
-}
-.callToAction h2
-{
-    font-family: 'Josefin Sans', sans-serif;
-    font-style: bold;
-    text-transform: capitalize;
-    font-size: 30px;
-    display: inline-block;
-    margin-right: 10%;
-}
 
-footer
-{
-    padding: 25px;
-    color: white;
-    background-color: #2C3E50;
-    text-align: center;
-}
+

@@ -7,6 +7,22 @@ body
     font-family: 'Hind', sans-serif;  
 }
 
+p
+{
+    font-family: 'Hind', sans-serif;
+    font-size: 28px;
+    line-height: 120%;
+    /* color: #2C3E50; */
+}
+
+ul li
+{
+    font-size: 25px;
+    line-height: 120%;
+    font-family: 'Hind', sans-serif;
+    font-weight: lighter;
+}
+
 .container
 {
     width: 90%;
@@ -20,13 +36,19 @@ body
     background-color: #18BC9C;
     padding: 10px 0px;
     padding-bottom: 100px;
-} 
+}
+
+.greenBackground a
+{
+    color: #2C3E50;
+}
 
 .plainBackground
 {
     
     padding: 10px 0px;
     padding-bottom: 100px;
+    color: #2C3E50;
 }
 
 a
@@ -107,7 +129,43 @@ h1
      color: #18BC9C;; 
     border-color: white; 
 }
+
+.align-right
+{
+    text-align: right;
+}
+
+footer
+{
+    padding: 25px;
+    color: white;
+    background-color: #2C3E50;
+    text-align: center;
+}
 /*=================================================*/
+
+/* Call To Action */
+.callToAction
+{
+    text-align: center;
+    background-color: whitesmoke;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.callToAction div
+{
+    padding-bottom: 10px;
+}
+.callToAction h2
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: bold;
+    text-transform: capitalize;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10%;
+}
+/* Call To Action */
 
 /*============================ Border ============================*/
 hr.star-light,
@@ -145,7 +203,7 @@ hr.star-primary:after {
 }
 /*=================================================*/
 
-/*============================ Navigation Bar ============================*/
+/*===================== Navigation Bar =====================*/
 nav
 {
     background-color: #2C3E50;
@@ -250,7 +308,7 @@ nav
         margin: 0px;
         /* margin-top: 10px;  */
         display: inline-block;
-        margin-right: calc(calc(calc(100vw - 10%) - 300px) - 260px);
+        /* margin-right: calc(calc(calc(100vw - 10%) - 300px) - 260px); */
     
     }
 
@@ -280,10 +338,35 @@ nav
     #navBar a
     {
         display: block;
+        background-color: #2C3E50;
     }
 
     .showcase h1
     {
         font-size: 50px; 
+    }
+
+    h1
+    {
+        font-size: 40px;
+    }
+    .h1-light
+    {
+        font-size: 40px;
+    }
+
+    .h1-smaller
+    {
+        font-size: 30px;
+    }
+
+    p
+    {
+        font-size: 20px;
+    }
+
+    ul li
+    {
+        font-size: 20px;
     }
 }

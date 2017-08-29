@@ -1,0 +1,13 @@
+ul li
+{
+    font-size: 30px;
+    line-height: 150%;
+}
+
+@media (max-width: 760px)
+{
+    ul li
+    {
+        font-size: 18px;
+    }
+}

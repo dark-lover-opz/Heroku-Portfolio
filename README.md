@@ -20,6 +20,20 @@ The technologies that are use:
 
 This project is currently deployed  on Heroku and can be visited [here](https://vetronus.herokuapp.com/). Please note that the project is still unorganised and incomplete. I have plans to complete it by August 2017.
 
+## Color Scheme and Fonts
+
+Note that I have used google fonts.
+
+### Colors:
+- #### Bluish Grey = #2C3E50
+- #### Light Green = #18BC9C
+- #### Pure White = Come on ? Its simple white !
+
+### Fonts:
+- #### Hind Font : 'Hind', sans-serif
+- #### Monstersat : 'Montserrat', sans-serif
+- #### Josefin Sans : 'Josefin Sans', sans-serif
+
 ## How To Use
 You don't need any backend or heavy front-end knowledge to modify this project simply replace the images in `img` folder, replace the texts in `index.html` file and edit some basic css if you want.
 In future, I might write a descriptive, user-friendly and quick way to start using this project as your portfolio theme.
@@ -28,7 +42,8 @@ In future, I might write a descriptive, user-friendly and quick way to start usi
 - Version 1.0 : Initial Release
 - Version 1.1 : Heroku-Deploy Ready
 - Version 1.2 : Cross-Platform and Resposive
-- Version 1.3 : Documentation Update*
+- Version 1.3 : Contact & About Me Pages Added
+- Version 1.4 : Documentation Update*
 
 Coming Soon*
 
