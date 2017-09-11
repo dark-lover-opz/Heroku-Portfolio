@@ -306,10 +306,7 @@ nav
     #logo
     {
         margin: 0px;
-        /* margin-top: 10px;  */
         display: inline-block;
-        /* margin-right: calc(calc(calc(100vw - 10%) - 300px) - 260px); */
-    
     }
 
     #navBar
