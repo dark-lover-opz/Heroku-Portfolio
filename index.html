@@ -4,7 +4,7 @@
     <title>XOX Game</title>
     <style>
         .board {
-            display: grid;
+            display: none;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 5px;
             width: 300px;
@@ -25,7 +25,11 @@
 </head>
 <body>
 
-<h1>XOX Game</h1>
+<div id="login">
+    <label for="username">Username:</label>
+    <input type="text" id="username">
+    <button onclick="login()">Login</button>
+</div>
 
 <div class="board" id="board">
     <div class="cell" onclick="cellClicked(0, 0)"></div>
@@ -46,6 +50,16 @@
         ['', '', ''],
         ['', '', '']
     ];
+
+    function login() {
+        const username = document.getElementById('username').value;
+        if (username) {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('board').style.display = 'grid';
+        } else {
+            alert('Please enter a username');
+        }
+    }
 
     function cellClicked(row, col) {
         const cell = document.getElementById('board').children[row * 3 + col];
@@ -76,4 +90,4 @@
 </script>
 
 </body>
-                                                      </html>
+</html>
