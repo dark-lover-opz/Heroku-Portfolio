@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
 <body>
 
-<audio autoplay loop>
+<audio controls autoplay loop>
   <source src="https://i.imgur.com/vOpIyps.mp4" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -32,6 +43,33 @@
         footer p {
             font-size: 10px;
         }
+
+        #feedbackSection {
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        #feedback {
+            width: 100%;
+            height: 100px;
+        }
+
+        #submitBtn {
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        #feedbackContainer {
+            width: 50%;
+            margin: auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -60,10 +98,37 @@
         <p align="center"> <a href="https://instagram.com/sinilint'"><img width="50px" alt="instagarm" title="instagarm" src="https://i.imgur.com/zA1qi8m.png" /></a> &#8287;&#8287;&#8287;&#8287;&#8287; <a href="https://line.me/ti/p/JIRMUtvbo3"><img width="50px" alt="Line" title="Line" src="https://i.imgur.com/xk9LrVw.png" /></a> &#8287;&#8287;&#8287;&#8287;&#8287; <a href="https://wa.me/918281860437"><img width="50px" alt="WhatsApp" title="WhatsApp" src="https://i.imgur.com/l6TYQ74.png" /></a> &#8287;&#8287;&#8287;&#8287;&#8287;
     </p>
 
+    <div id="feedbackSection">
+        <form id="feedbackForm" onsubmit="submitFeedback(event)">
+            <label for="feedback">Send Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+            <button id="submitBtn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="feedbackContainer">
+        <h3>Feedback:</h3>
+        <ul id="feedbackList"></ul>
+    </div>
+
     <footer>
         <p style="color: #ffffff; font-size: 10px;">&copy; 2023 This profile created by Fazil.</p>
     </footer>
 
+    <script>
+        function submitFeedback(event) {
+            event.preventDefault();
+            const feedbackText = document.getElementById('feedback').value;
+            if (feedbackText) {
+                const feedbackList = document.getElementById('feedbackList');
+                const listItem = document.createElement('li');
+                listItem.textContent = feedbackText;
+                feedbackList.appendChild(listItem);
+                document.getElementById('feedbackForm').reset();
+            }
+        }
+    </script>
+
 </body>
 
-            </html>
+      </html>
