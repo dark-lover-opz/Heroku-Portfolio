@@ -3,52 +3,48 @@
 
 <head>
     <style>
-        .project-a {
-            position: relative;
-            display: inline-block;
-            border-radius: 50%;
-            overflow: hidden;
-            transition: transform 0.3s;
+        html,
+        body {
+            height: 100%;
         }
 
-        .project-a p {
-            position: relative;
-            z-index: 1;
-            border-radius: 50%;
-            padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
+        body {
+            display: grid;
+            font-family: Avenir, sans-serif;
+            color: #111;
         }
 
-        .project-a::after {
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .cta {
+            position: relative;
+            margin: auto;
+            padding: 19px 22px;
+            transition: all 0.2s ease;
+        }
+
+        .cta:before {
             content: "";
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background-color: white;
-            z-index: 0;
-            transition: width 0.3s, left 0.3s;
-            transform: translate(-50%, -50%);
-        }
-
-        .project-a:hover p {
-            transform: scale(1.1);
-        }
-
-        .project-a:active::after {
-            width: 100%;
+            top: 0;
             left: 0;
+            display: block;
+            border-radius: 28px;
         }
     </style>
 </head>
 
 <body>
-    <a class="project-a" href="https://instagram.com/sinilint">
-        <p>CLICK ME!</p>
+    <a href="#" class="cta">
+        <span>Click me</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
     </a>
 </body>
 
-    </html>
+</html>
