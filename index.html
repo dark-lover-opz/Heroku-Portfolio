@@ -1,104 +1,77 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>XOX Game</title>
-    <style>
-        .board {
-            display: none;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 5px;
-            width: 300px;
-            margin: auto;
-        }
-
-        .cell {
-            width: 100px;
-            height: 100px;
-            border: 1px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 36px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-
-<div id="login">
-    <label for="username">Username:</label>
-    <input type="text" id="username">
-    <button onclick="login()">Login</button>
+<div class="portfolio container plainBackground" id="projects">
+            <h1>Projects</h1>
+            <hr class="star-primary">
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p1.png" alt="">
+                        <p>The Explosion</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p2.png" alt="">
+                        <p>Gravity Hop</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p3.png" alt="">
+                        <p>Control Me</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p4.png" alt="">
+                        <p>Chota URL</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p5.png" alt="">
+                        <p>Kapsule</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p6.png" alt="">
+                        <p>EraseIt</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p1.png" alt="">
+                        <p>Urban Exam</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p2.png" alt="">
+                        <p>Nerdcorp</p>
+                    </a> 
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "project-hover">
+                    <a class="project-a"href="#">
+                        <img src="img/portfolio/p3.png" alt="">
+                        <p>Teenagers Time</p>
+                    </a> 
+                </div>
+            </div>
+                        
 </div>
-
-<div class="board" id="board">
-    <div class="cell" onclick="cellClicked(0, 0)"></div>
-    <div class="cell" onclick="cellClicked(0, 1)"></div>
-    <div class="cell" onclick="cellClicked(0, 2)"></div>
-    <div class="cell" onclick="cellClicked(1, 0)"></div>
-    <div class="cell" onclick="cellClicked(1, 1)"></div>
-    <div class="cell" onclick="cellClicked(1, 2)"></div>
-    <div class="cell" onclick="cellClicked(2, 0)"></div>
-    <div class="cell" onclick="cellClicked(2, 1)"></div>
-    <div class="cell" onclick="cellClicked(2, 2)"></div>
-</div>
-
-<script>
-    let currentPlayer = 'X';
-    let boardState = [
-        ['', '', ''],
-        ['', '', ''],
-        ['', '', '']
-    ];
-
-    function login() {
-        const username = document.getElementById('username').value;
-        if (username) {
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('board').style.display = 'grid';
-        } else {
-            alert('Please enter a username');
-        }
-    }
-
-    function cellClicked(row, col) {
-        const cell = document.getElementById('board').children[row * 3 + col];
-        if (!cell.textContent) {
-            cell.textContent = currentPlayer;
-            boardState[row][col] = currentPlayer;
-            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            checkWinner();
-        }
-    }
-
-    function checkWinner() {
-        // ... (rest of the code remains the same)
-    }
-
-    function resetBoard() {
-        const cells = document.getElementsByClassName('cell');
-        for (let i = 0; i < cells.length; i++) {
-            cells[i].textContent = '';
-        }
-        currentPlayer = 'X';
-        boardState = [
-            ['', '', ''],
-            ['', '', ''],
-            ['', '', '']
-        ];
-    }
-</script>
-
-</body>
-</html>
-          <!DOCTYPE html>
-<html>
-<body>
-
-<audio autoplay loop>
-  <source src="https://i.imgur.com/vOpIyps.mp4" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-</body>
-</html>
