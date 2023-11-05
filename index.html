@@ -1,9 +1,54 @@
-<a class="project-a" href="https://instagram.com/sinilint" style="display: inline-block; border-radius: 50%; overflow: hidden; transition: transform 0.3s;">
-    <img src="img/portfolio/p4.png" alt="" style="border-radius: 50%;">
-</a>
+<!DOCTYPE html>
+<html>
 
-<style>
-    .project-a:hover {
-        transform: scale(1.1);
-    }
-</style>
+<head>
+    <style>
+        .project-a {
+            position: relative;
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .project-a p {
+            position: relative;
+            z-index: 1;
+            border-radius: 50%;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+
+        .project-a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            z-index: 0;
+            transition: width 0.3s, left 0.3s;
+            transform: translate(-50%, -50%);
+        }
+
+        .project-a:hover p {
+            transform: scale(1.1);
+        }
+
+        .project-a:active::after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="project-a" href="https://instagram.com/sinilint">
+        <p>CLICK ME!</p>
+    </a>
+</body>
+
+    </html>
