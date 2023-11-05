@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>XOX Game</title>
     <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
+        .board {
             display: grid;
-            font-family: Avenir, sans-serif;
-            color: #111;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .cta {
-            position: relative;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5px;
+            width: 300px;
             margin: auto;
-            padding: 19px 22px;
-            transition: all 0.2s ease;
         }
 
-        .cta:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            border-radius: 28px;
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            cursor: pointer;
         }
     </style>
 </head>
-
 <body>
-    <a href="#" class="cta">
-        <span>Click me</span>
-        <svg width="13px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-        </svg>
-    </a>
-</body>
 
-</html>
+<h1>XOX Game</h1>
+
+<div class="board" id="board">
+    <div class="cell" onclick="cellClicked(0, 0)"></div>
+    <div class="cell" onclick="cellClicked(0, 1)"></div>
+    <div class="cell" onclick="cellClicked(0, 2)"></div>
+    <div class="cell" onclick="cellClicked(1, 0)"></div>
+    <div class="cell" onclick="cellClicked(1, 1)"></div>
+    <div class="cell" onclick="cellClicked(1, 2)"></div>
+    <div class="cell" onclick="cellClicked(2, 0)"></div>
+    <div class="cell" onclick="cellClicked(2, 1)"></div>
+    <div class="cell" onclick="cellClicked(2, 2)"></div>
+</div>
+
+<script>
+    let currentPlayer = 'X';
+    let boardState = [
+        ['', '', ''],
+        ['', '', ''],
+        ['', '', '']
+    ];
+
+    function cellClicked(row, col) {
+        const cell = document.getElementById('board').children[row * 3 + col];
+        if (!cell.textContent) {
+            cell.textContent = currentPlayer;
+            boardState[row][col] = currentPlayer;
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            checkWinner();
+        }
+    }
+
+    function checkWinner() {
+        // ... (rest of the code remains the same)
+    }
+
+    function resetBoard() {
+        const cells = document.getElementsByClassName('cell');
+        for (let i = 0; i < cells.length; i++) {
+            cells[i].textContent = '';
+        }
+        currentPlayer = 'X';
+        boardState = [
+            ['', '', ''],
+            ['', '', ''],
+            ['', '', '']
+        ];
+    }
+</script>
+
+</body>
+                                                      </html>
